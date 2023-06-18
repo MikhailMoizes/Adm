@@ -19,4 +19,14 @@
          <li> Right-click on the Certificate templates node and in the context menu select create → Issued certificate template</li>
          <li> In the Enable certificate templates window that opens, select the created certificate from the list and click the OK button.</li>
     </ol>
+    <li> Issue a certificate through the web interface.</li>
+    <li> Through mmc. export the certificate with the key.</li>
+    <li> Move the certificate to the lincus server.</li>
+    <li> Separate the certificate and key using openssl.</li>
+    <ol>
+      <li>Extracting the public key:</li>
+         `openssl pkcs12 -in file_name.pfx -clcerts -nokeys -out file_name.crt`
+      <li>Certificate Extraction:</li>
+         `openssl pkcs12 -in file_name.pfx -nocerts -out file_name.private.key`
+    </ol>
   </ol>
