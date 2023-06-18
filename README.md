@@ -27,6 +27,8 @@
       <li>Extracting the public key:</li>
       <pre><code>openssl pkcs12 -in file_name.pfx -clcerts -nokeys -out file_name.crt</code></pre>
       <li>Certificate Extraction:</li>
-      <listing>openssl pkcs12 -in file_name.pfx -nocerts -out file_name.private.key</listing>
+      <pre><code>openssl pkcs12 -in file_name.pfx -nocerts -out file_name.private.key</code></pre>
+      <li>Disabling the private key passphrase:</li>
+      <pre><code>openssl rsa -in file_name.private.key -out file_name.key</code></pre>
     </ol>
   </ol>
