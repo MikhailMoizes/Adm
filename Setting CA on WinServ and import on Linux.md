@@ -21,7 +21,7 @@
     </ol>
     <li> Issue a certificate through the web interface.</li>
     <li> Through mmc. export the certificate with the key.</li>
-    <li> Move the certificate to the lincus server.</li>
+    <li> Move the certificate to the linux server.</li>
     <li> Separate the certificate and key using openssl.</li>
     <ol>
       <li>Extracting the public key:</li>
