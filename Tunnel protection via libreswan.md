@@ -12,7 +12,7 @@
 	phase2alg=aes256-sha2
 	left=`YOUR_NETWORK`  
 	leftprotoport=gre
-	right=`далекая_сеть`
+	right=`REMOTE_NETWORK`
 	rightprotoport=gre
   </pre></code>
 	<li> Second file format:</li>
