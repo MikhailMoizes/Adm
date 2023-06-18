@@ -22,8 +22,8 @@ server {
 }
 </code></pre>
   <li>Download iptables and write the following settings:<li>
-   <pre><code>iptables -t nat -A PREROUTING -i <out_interface> -p tcp --dport 80 -j DNAT --to <adress>:<port>
-iptables -t nat -A PREROUTING -i <out_interface> -p tcp --dport 443 -j DNAT --to <adress>:<port>
+   <pre><code>iptables -t nat -A PREROUTING -i <out_interface> -p tcp --dport 80 -j DNAT --to **`adress`:`port`**
+iptables -t nat -A PREROUTING -i <out_interface> -p tcp --dport 443 -j DNAT --to **`adress`:`port`**
 iptables -A FORWARD -i <in> -o <out_interface> -j ACCEPT # allow forwarding from internal port to external
 iptables -t nat -A POSTROUTING -o <out_interface> -j MASQUERADE # Creating NAT Rules
 iptables -A FORWARD -i <out_interface> -m state --state ESTABLISHED,RELATED -j ACCEPT # Allow external response 
