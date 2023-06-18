@@ -10,7 +10,7 @@
    <li>Request and install a server certificate.</li>
      <p>Follow these steps to create a server authentication certificate on the VPN server:</p>
        <ol>
-         <li>In the Server Manager, in the Service menu, select the Certification Authority item;<li>
+         <li>In the Server Manager, in the Service menu, select the Certification Authority item;</li>
          <li>In the Certification Authority window, expand the Certification Authority (Local) node → CA_Name → Certificate Templates, and right-click on the Certificate Templates node and select Manage from the context menu;</li>
          <li>In the Certificate Templates Console, right-click the Web Server template and select Copy template from the context menu;</li>
          <li>The Properties window of the new template will open, in the Compatibility tab, leave the default setting of Windows Server 2003 - in the General tab, name the template, for example, VPN IPSec, specify the validity period no more than the validity period created by the CA;</li>
