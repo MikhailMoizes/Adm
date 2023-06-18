@@ -1,6 +1,4 @@
-# Adm
-
-<H1> Setting CA on WinServ and import on Linux </H1>
+# Setting CA on WinServ and import on Linux
   <p>To setting CA you should follow the next instructions:<p>
   <ol>
    <li>Create DC(Domain Controller)</li>
