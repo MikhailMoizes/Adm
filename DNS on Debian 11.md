@@ -20,4 +20,18 @@
 `CHANGE_ME`.	IN	NS	`CHANGE_ME`.
 `CHANGE_ME`	IN	A	`CHANGE_ME`. ; glue record
 </pre></code>
+  <li> The second file is more attractive:</li>
+  <pre><code>
+  zone ‘`CHANGE_ME`’ {
+	type master;
+	allow-transfer { any; };
+	file “/etc/bind/db.local”;
+</pre></code>
+  <li> The last one is the bomb: </li>
+    <pre><code>
+forwarders { `CHANGE_ME`; };
+dnssec-validation no;
+allow-query { any; }
+listen-on { any; }
+  </pre></code>
 
