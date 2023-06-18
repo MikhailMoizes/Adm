@@ -1,4 +1,4 @@
-# How to make DNS on debian 11 and forward it to another DNS?
+# How to make DNS on Debian 11 and forward it to another DNS?
 <ol>
   <li> The question is complex, but the answer is simple!</li>
   <li> Download <pre><code>bind*</pre></code></li>
