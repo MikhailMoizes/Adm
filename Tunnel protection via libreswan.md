@@ -17,7 +17,7 @@
   </pre></code>
 	<li> Second file format:</li>
 	<pre><code>our_network far_network : PSK “Super secret key”</pre></code>
-	<li> From the second side it is similar. We live and enjoy.</li>
+	<li> From the second side it is similar. <b>We live and enjoy.</b></li>
 	<li> If you want to start up dynamics in the network, then download frr from the link: https://deb.frrouting.org/ </li>
 
 
