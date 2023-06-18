@@ -25,7 +25,7 @@
     <li> Separate the certificate and key using openssl.</li>
     <ol>
       <li>Extracting the public key:</li>
-      <listing>openssl pkcs12 -in file_name.pfx -clcerts -nokeys -out file_name.crt</listing>
+      <pre><code>openssl pkcs12 -in file_name.pfx -clcerts -nokeys -out file_name.crt</code></pre>
       <li>Certificate Extraction:</li>
       <listing>openssl pkcs12 -in file_name.pfx -nocerts -out file_name.private.key</listing>
     </ol>
