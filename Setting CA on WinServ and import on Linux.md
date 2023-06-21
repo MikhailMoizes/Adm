@@ -42,19 +42,18 @@
     <li>We go into the properties of the certification authority and delete all information from the CDP and AIA.</li>
     <li>We generate a key, the command openssl genrsa -out private.key 2048</li>
     <li>On Linux, create a file with the following settings:</li>
-    <pre><code>
-      [req]
-      distinguished_name=req_dist_name
-      req_extensions=req_ext
-      [req_dist_name]
-      countryname=`CONTRY_NAME`
-      organizationName=`ORGANIZATION_NAME`
-      commonName=`SITE_NAME`
-      [req_ext]
-      subjectAltName=@alt_names
-      [alt_names]
-      DNS.1=`SITE_NAME`
-      IP.1=`ADRESS`
-      IP.2=`ADRESS`
-    </code></pre>
+    <pre><code>[req]
+    distinguished_name=req_dist_name
+    req_extensions=req_ext
+    [req_dist_name]
+    countryname=`CONTRY_NAME`
+    organizationName=`ORGANIZATION_NAME`
+    commonName=`SITE_NAME`
+    [req_ext]
+    subjectAltName=@alt_names
+    [alt_names]
+    DNS.1=`SITE_NAME`
+    IP.1=`ADRESS`
+    IP.2=`ADRESS`</code></pre>
+    
   </ol>
