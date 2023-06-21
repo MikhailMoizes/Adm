@@ -42,7 +42,8 @@
     <li>We go into the properties of the certification authority and delete all information from the CDP and AIA.</li>
     <li>We generate a key, the command openssl genrsa -out private.key 2048</li>
     <li>On Linux, create a file with the following settings:</li>
-    <pre><code>[req]
+    <pre><code>
+    [req]
     distinguished_name=req_dist_name
     req_extensions=req_ext
     [req_dist_name]
@@ -55,5 +56,10 @@
     DNS.1=`SITE_NAME`
     IP.1=`ADRESS`
     IP.2=`ADRESS`</code></pre>
-    
+    <li>We generate a request through the command openssl req -new -key private.key -out www.req -
+config www.conf and enter the necessary that we are asked.</li>
+<li>We issue a certificate on Windows, then export it back to Linux.</li>
+<li>Convert it to pem format, command openssl x509 -in www.cer -inform d -out
+www.pem</li>
+<li><b>We live and rejoice!</b></li>
   </ol>
