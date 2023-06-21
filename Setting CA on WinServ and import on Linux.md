@@ -56,10 +56,8 @@
     DNS.1=`SITE_NAME`
     IP.1=`ADRESS`
     IP.2=`ADRESS`</code></pre>
-    <li>We generate a request through the command and enter the necessary that we are asked<pre><code>openssl req -new -key private.key -out www.req -
-config www.conf </code></pre> </li>
+    <li>We generate a request through the command and enter the necessary that we are asked<pre><code>openssl req -new -key private.key -out www.req -config www.conf </code></pre> </li>
 <li>We issue a certificate on Windows, then export it back to Linux.</li>
-<li>Convert it to pem format, command <pre><code>openssl x509 -in www.cer -inform d -out
-www.pem</code></pre></li>
+<li>Convert it to pem format, command <pre><code>openssl x509 -in www.cer -inform d -out www.pem</code></pre></li>
 <li><b>We live and rejoice!</b></li>
   </ol>
