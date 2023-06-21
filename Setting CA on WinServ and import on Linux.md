@@ -1,5 +1,6 @@
 # Setting CA on WinServ and import on Linux
-  <p>To setting CA you should follow the next instructions:<p>
+  <p><b>To setting CA you should follow the next instructions:</b><p>
+  <p>Method 1</p>
   <ol>
    <li>Create DC(Domain Controller)</li>
      <p></p>
@@ -31,4 +32,29 @@
       <li>Disabling the private key passphrase:</li>
       <pre><code>openssl rsa -in file_name.private.key -out file_name.key</code></pre>
     </ol>
+  </ol>
+  
+  <p>Method 2</p>
+  <ol>
+    <li>Download the certification authority as usual, but without verification via the Internet.
+    <li>Set up slowly.</li>
+    <li>We export the certificate of the center to the Linux server we need.</li>
+    <li>We go into the properties of the certification authority and delete all information from the CDP and AIA.</li>
+    <li>We generate a key, the command openssl genrsa -out private.key 2048</li>
+    <li>On Linux, create a file with the following settings:</li>
+    <pre><code>
+      [req]
+      distinguished_name=req_dist_name
+      req_extensions=req_ext
+      [req_dist_name]
+      countryname=`CONTRY_NAME`
+      organizationName=`ORGANIZATION_NAME`
+      commonName=`SITE_NAME`
+      [req_ext]
+      subjectAltName=@alt_names
+      [alt_names]
+      DNS.1=`SITE_NAME`
+      IP.1=`ADRESS`
+      IP.2=`ADRESS`
+    </code></pre>
   </ol>
