@@ -34,6 +34,6 @@ dnssec-validation no;
 allow-query { any; }
 listen-on { any; }
   </pre></code>
-<li> And be happy!!! <k>(apt install -y chrony/local stratum 4 allow `CHANGE_ME`/маска allow `CHANGE_ME`/`MASK`)</k></li>
+<li> And be happy!!! <k>(apt install -y chrony/local stratum 4 allow `CHANGE_ME`/`MASK` allow `CHANGE_ME`/`MASK`)</k></li>
 <ol>
 
